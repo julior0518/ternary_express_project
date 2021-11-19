@@ -6,25 +6,49 @@ document.querySelector(`nav`).style.width = width;
 
 let arrayQuestion = [`console`, `log`, `.`, `(`, `)`, `Federico`];
 let superComparisonArray = [];
-let arrayAnswer = [`console`, `Federico`, `.`, `(`, `)`, `log`];
+let arrayAnswer = [];
 
-for (i = 0; i < arrayQuestion.length; i++) {
-  let cute = arrayAnswer[i] === arrayQuestion[i];
-  superComparisonArray.push(cute);
-}
-// console.log(superComparisonArray);
-
-for (i = 0; i < arrayQuestion.length; i++) {
-  const question = document.createElement(`div${i}`);
-  question.setAttribute(`class`, `optionBox`);
-  document.querySelector(`.textBoxTop`).appendChild(question);
-  question.innerText = arrayQuestion[i];
-  question.addEventListener(`click`, removeBox);
-
-  function removeBox() {
-    console.log(`hello ${question.innerText}`);
+function sceneChek() {
+  for (i = 0; i < arrayQuestion.length; i++) {
+    let cute = arrayAnswer[i] === arrayQuestion[i];
+    superComparisonArray.push(cute);
   }
 }
+// console.log(superComparisonArray);
+function sceneStar() {
+  for (i = 0; i < arrayQuestion.length; i++) {
+    const question = document.createElement(`div${i}`);
+    question.setAttribute(`class`, `optionBox`);
+    document.querySelector(`.textBoxTop`).appendChild(question);
+    question.innerText = arrayQuestion[i];
+    question.addEventListener(`click`, clickBox);
+
+    // function clickBox() {
+    //   arrayAnswer.push(question.innerText);
+    //   for (i = 0; i < arrayAnswer.length; i++) {
+    //     const answer = document.createElement(`div${i}`);
+    //     answer.setAttribute(`class`, `optionBox`);
+    //     document.querySelector(`.textBoxBottom`).appendChild(answer);
+    //     answer.innerText = arrayAnswer[i];
+    //     // sceneChek();
+    //     console.log(arrayAnswer);
+    //   }
+    function clickBox() {
+      arrayAnswer.push(question.innerText);
+      const answer = document.createElement(`div`);
+      answer.setAttribute(`class`, `optionBox`);
+      document.querySelector(`.textBoxBottom`).appendChild(answer);
+      answer.innerText = question.innerText;
+      sceneChek();
+      console.log(arrayQuestion);
+      console.log(superComparisonArray);
+      console.log(arrayAnswer);
+
+      // arrayQuestion.splice();
+    }
+  }
+}
+sceneStar();
 
 // function montana() {
 // const tonyMontana = document.createElement('img');
