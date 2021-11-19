@@ -51,6 +51,15 @@ header {
   grid-column: 1 /span 3;
   grid-row:  1;
   margin: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.optionBox{
+  background-color: lavender;
+  height: 30px;
+  margin: 5px;
+  padding: 5px 15px 0px 15px;
+
 }
 .textBoxBottom{
   background-color: hotpink;
@@ -59,7 +68,12 @@ header {
   margin: 10px;
 }
 
-
+.character {
+  background-color:khaki;
+  grid-column: 2/span 4;
+  grid-row: 2 / span 4;
+  margin: 10px;
+}
 
 button {
   grid-column: 4;
