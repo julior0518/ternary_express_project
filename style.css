@@ -37,6 +37,7 @@ header {
 }
 
 .gameScreen{
+  min-width: 400px;
   grid-column: 3;
   grid-row: 3;
   justify-self: center;
@@ -89,8 +90,8 @@ header {
   align-items: center;
 }
 
-.character {
-  background-color:khaki;
+.screen{
+  background-color:rgb(182, 240, 140);
   grid-column: 1/span 4;
   grid-row: 2/ span 4;
   margin: 10px;
@@ -98,13 +99,11 @@ header {
 
 }
 
-button {
-  grid-column: 1;
-  grid-row:  4;
-  height: 20px;
+.instructions{
   margin: 10px;
-
 }
+
+
 
 .credits {
   grid-row: 2;
