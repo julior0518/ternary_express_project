@@ -1,9 +1,10 @@
-/////////// set width of nav bar
+let level = 0;
+/////////////////////// On page load ////////////////////////////////////////////////////////////////////////////////////////////////////////
 const width = document.documentElement.clientWidth;
 document.querySelector(`nav`).style.width = width;
-
+const pressPlay = document.querySelector(`.pressPlay`);
+pressPlay.addEventListener(`click`, play);
 /////////////////////// Question ans Answer object by level ////////////////////////////////////////////////////////////////////////////////////////////////////////
-
 let levelEasy = [];
 
 class Question {
@@ -13,36 +14,25 @@ class Question {
   }
 }
 
-const question1 = new Question(
+const question0 = new Question(
   `A code that prints 'hello' on the terminal`,
   `console . log ( " hello " )`
 );
-levelEasy.push(question1);
-
-const question2 = new Question(
+levelEasy.push(question0);
+const question1 = new Question(
   `Write a code to connect a CSS file to your HTML`,
   `< link rel = " stylesheet " href = " style.css / >`
 );
-
-const problem2 = `Write a code to connect a CSS file to your HTML`;
-const answer2 = [
-  `<`,
-  `link`,
-  `rel`,
-  `=`,
-  `"`,
-  `stylesheet`,
-  `"`,
-  `href`,
-  `=`,
-  `"`,
-  `style.css`,
-  `/`,
-  `>`
-];
+levelEasy.push(question1);
+const question2 = new Question(
+  `change the color of h1 to red with Java Script`,
+  `document . querySelector ( " h1 " ) . style . color = " red "`
+);
 levelEasy.push(question2);
-////////////////////// SCENE GAME CHOOSE THE RIGHT ORDER OF INPUTS//////////////////////////////////////////////////////////////////////////////////////
 
+/////////////////////// Question ans Answer object by level ////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+////////////////////// SCENE GAME CHOOSE THE RIGHT ORDER OF INPUTS//////////////////////////////////////////////////////////////////////////////////////
 function sceneStar(questionProblem, questionAnswer) {
   const screenText = document.createElement(`div`);
   screenText.setAttribute(`class`, `instructions`);
@@ -96,7 +86,24 @@ function sceneStar(questionProblem, questionAnswer) {
             if (superComparisonArray.length === arrayQuestion.length) {
               if (!superComparisonArray.includes(false)) {
                 console.log(`fuck yeah`);
-                alert(`nice`);
+                let instruction = document.querySelector(`.instructions`);
+                instruction.parentNode.removeChild(instruction);
+                let questionBoxes = document.querySelectorAll(`#question`);
+                questionBoxes.forEach((box, i) => {
+                  box.remove();
+                });
+                let answerBoxes = document.querySelectorAll(`#answer`);
+
+                answerBoxes.forEach((box, i) => {
+                  box.remove();
+                });
+
+                superArrayGhost = [];
+                arrayQuestionRandom = [];
+                arrayAnswer = [];
+                superComparisonArray = [];
+                level++;
+                sceneStar(levelEasy[level].problem, levelEasy[level].answer);
               } else {
                 alert(`gotta try again`);
                 function reset() {
@@ -116,7 +123,12 @@ function sceneStar(questionProblem, questionAnswer) {
     }
   }
 }
-
-sceneStar(levelEasy[1].problem, levelEasy[1].answer);
-
+// sceneStar(levelEasy[1].problem, levelEasy[1].answer);
 ////////////////////// SCENE GAME CHOOSE THE RIGHT ORDER OF INPUTS//////////////////////////////////////////////////////////////////////////////////////
+
+function play() {
+  let loadScene = document.querySelector(`.loadScene`);
+  loadScene.parentNode.removeChild(loadScene);
+
+  sceneStar(levelEasy[level].problem, levelEasy[level].answer);
+}
