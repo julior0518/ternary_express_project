@@ -3,7 +3,9 @@
 
 # Ternary Express
 
-### Challenge Mode: a coding exercise challenge game. You must complete all the coding challenges with only the words and symbols provided in as little time as possible.
+### Classic Mode: You must complete all the coding challenges with only the words and symbols provided as they increase in difficulty.
+
+### Challenge Mode: a coding exercise challenge game. You must complete as many level as possible with no room for error.
 
 
 ------------
