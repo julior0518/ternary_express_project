@@ -73,6 +73,7 @@ function sceneStar(questionProblem, questionAnswer) {
       question.addEventListener(`click`, clickBox);
 
       function clickBox() {
+        // question.style.backgroundColor = `black`;
         arrayAnswer.push(question.innerText);
         const answer = document.createElement(`div`);
         answer.setAttribute(`class`, `optionBox`);
@@ -88,13 +89,15 @@ function sceneStar(questionProblem, questionAnswer) {
                 alert(`nice`);
               } else {
                 alert(`gotta try again`);
-                arrayAnswer.splice(0, arrayAnswer.length);
-                arrayQuestionRandom.splice(0, arrayQuestionRandom.length);
-                superComparisonArray.splice(0, superComparisonArray.length);
-                let answerBoxes = document.querySelectorAll(`#answer`);
-                answerBoxes.forEach((box, i) => {
-                  box.remove();
-                });
+                function reset() {
+                  arrayAnswer.splice(0, arrayAnswer.length);
+                  superComparisonArray.splice(0, superComparisonArray.length);
+                  let answerBoxes = document.querySelectorAll(`#answer`);
+                  answerBoxes.forEach((box, i) => {
+                    box.remove();
+                  });
+                }
+                reset();
               }
             }
           }
@@ -103,5 +106,7 @@ function sceneStar(questionProblem, questionAnswer) {
     }
   }
 }
+
 sceneStar(levelEasy[1].problem, levelEasy[1].answer);
+
 ////////////////////// SCENE GAME CHOOSE THE RIGHT ORDER OF INPUTS//////////////////////////////////////////////////////////////////////////////////////
