@@ -1,27 +1,23 @@
 
-![Operator](https://pngimage.net/wp-content/uploads/2018/06/train-driver-png-4.png)
+![Operator](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkAekfdl4RzE3aoxkFSI5K9Jsf8Fn5KHOCDA&usqp=CAU)
 
 # Ternary Express
 
-### Challenge Mode: a codin exercise challenge game. You must complete all the coding challenges with only the words and symbols provided in as little time as possible.
+### Challenge Mode: a coding exercise challenge game. You must complete all the coding challenges with only the words and symbols provided in as little time as possible.
 
-#### Story Mode: Inside of the Ternary Express there are many things going wrong. As the operator you will have to communicate to the staff and pansengers of the train using only **ternary operators**. 
 
 ------------
 ## Gameplay 
 
  1. Visual screen that shows dynamic text based ont the current scene <br>
  2. A board of random words, tags, and symbols to choose from in order <br>
- 3. A button to go to the next scene <br>
+ 3. A reset button in case you make a mistake <br>
 
 ## MVP sections
 To create an MVP we will need:
-- A script of the story of the game with paths
-- A puzzle system to collect items and access areas in the train
-- *if, if else, else* structure for answering the adventure 
+- A gameScreen
 - create a *() : ? =* solution to store in arrays for each structure
 - A dynamic selector that lets you build the order of the solution
-- A cheking feature that drives your character down a path based on how you presented your argument throuhg the solution
 
 ## Additions
 - Object Oriented creation of scenes 
