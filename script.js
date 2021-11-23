@@ -54,6 +54,16 @@ function sceneStar(questionProblem, questionAnswer) {
   let arrayAnswer = [];
   let superComparisonArray = [];
 
+  const resetButton = document.querySelector(`.backspace`);
+  resetButton.addEventListener(`click`, () => {
+    arrayAnswer.splice(0, arrayAnswer.length);
+    superComparisonArray.splice(0, superComparisonArray.length);
+    let answerBoxes = document.querySelectorAll(`#answer`);
+    answerBoxes.forEach((box, i) => {
+      box.remove();
+    });
+  });
+
   arrayQuestion.forEach((word, i) => {
     superArrayGhost.push(word);
   });
