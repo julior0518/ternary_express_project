@@ -30,6 +30,6 @@ To create an MVP we will need:
 
 ------------------
 >##### Credits: Julio
->##### - [image](https://www.google.com/imgres?imgurl=https%3A%2F%2Fimg.favpng.com%2F0%2F10%2F15%2Ftrain-conductor-rail-transport-clip-art-railroad-engineer-png-favpng-RTtRhwL8GL755WY0Qn61p0fwf.jpg&imgrefurl=https%3A%2F%2Ffavpng.com%2Fpng_view%2Ftrain-train-conductor-rail-transport-clip-art-railroad-engineer-png%2FNYtuMKpH&tbnid=1EdCbIHevR6r6M&vet=12ahUKEwjH5qn6pqH0AhUCO98KHRUtAa8QMygnegUIARCuAg..i&docid=-bg1Bdna6wf_YM&w=820&h=640&itg=1&q=train%20operator%20cartoon%20vector&ved=2ahUKEwjH5qn6pqH0AhUCO98KHRUtAa8QMygnegUIARCuAg#imgrc=1EdCbIHevR6r6M&imgdii=K3FgMz5lltPi9M)
 >##### - [Youtube](https://www.youtube.com/watch?v=qtVstzzUa3Q&ab_channel=edutechional)
 >##### - [Youtube](https://www.youtube.com/watch?v=s4sB1hm73tw&ab_channel=freeCodeCamp.org)
+>##### - [W3Schools](https://www.w3schools.com/jsref/jsref_splice.asp)
