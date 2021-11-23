@@ -18,7 +18,7 @@ class Question {
     this.answer = answer.split(' ');
   }
 }
-
+///////////////// bellow you can delte and create any amount of const = question# that you want. order doesnt matter for Challenge game
 const question0 = new Question(
   `A code that prints 'hello' on the terminal`,
   `console . log ( " hello " )`
