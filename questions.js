@@ -40,7 +40,8 @@ levelito.push(question4);
 const question5 = new Question(
   `combine these arrays 
   const even = [2, 4, 6, 8, 10, 12, 14, 16, 18, 20];
-  const odd = [1, 3, 5, 7, 9, 11, 13, 15, 17, 19];`,
+  const odd = [1, 3, 5, 7, 9, 11, 13, 15, 17, 19];
+  * add even 1st and odd 2nd`,
   `const numberCombo = [ ... even , ... odd ]`
 );
 levelito.push(question5);
@@ -54,6 +55,31 @@ levelito.push(question6);
 
 const question7 = new Question(
   `Use .map to return an "array" of all "num" multiplied by 5`,
-  `const arrayTimes2 = array . map ( ( num ) = > { return num * 2 ; } ) `
+  `const arrayTimes2 = array . map ( ( num ) = > { return num * 2 ; } )`
 );
 levelito.push(question7);
+/////////////////////////////////////////////////////
+
+const question8 = new Question(
+  `create a class called City with a constructor that takes in this citys name and an attribut called planet that is Earth`,
+  `class City { constructor ( name ) { this . planet = " Earth " } }`
+);
+levelito.push(question8);
+
+const question9 = new Question(
+  `convert the following "if statement" to a "ternary operator"
+  if (5 > i) {
+    console.log("great")
+  } else {
+    console.log("lame")
+  }`,
+  `5 > i ? console . log ( " great " ) : console . log ( " lame " )`
+);
+levelito.push(question9);
+
+const question10 = new Question(
+  `Use .filter to return an array of all odd numbers
+  array :[ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]`,
+  `const arrayEvens = array . filter ( ( num ) = > { if ( num % 2 ) { return ; } return num ; } )`
+);
+levelito.push(question10);

@@ -7,7 +7,7 @@
 
 ### Challenge Mode: a coding exercise challenge game. You must complete as many level as possible with no room for error.
 
-
+> the game is available at http://ternaryexpress.surge.sh/
 ------------
 ## Gameplay 
 
